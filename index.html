@@ -10,12 +10,17 @@
   <!-- FONTE DE ICONES -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- FONTE ROBOTO -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
   <title>Document</title>
 </head>
-<body class="bg-sky-600">
+<body>
 
   <!-- HEADER -->
-    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <header class="w-full h-[605px] bg-zinc-900 bg-home bg-cover bg-center relative after:bg-home-moldura after:bg-center after:bg-no-repeat after:absolute after:left-0 after:bottom-[0] after:w-full after:h-[8.313rem]">
       <div class="w-full h-full flex flex-col justify-center items-center">
         
         <img src="./assets/img/hamb-1.png" alt="logo hamburguer" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
@@ -31,33 +36,211 @@
   <!-- FIM - HEADER -->
 
 
-  <h2 class="text-2xl font-bold text-center my-10 md:text-5xl">Conheça nosso menu</h2>
-
+  <h2 class="text-2xl font-bold text-center mt-10 mb-14 md:mt-14 md:mb-20 md:text-5xl">Conheça nosso menu</h2>
+  <div class="mx-auto max-w-7xl px-2">
+    <h2 class="h2-menu">Hamburguer's</h2>
+  </div>
 
   <!-- MENU -->
     <div id="menu">
-      <main>
+      <main class="grid grid-cols-1 md:grid-cols-2 md:gap-x-24 md:gap-y-10 gap-y-8 mx-auto max-w-7xl px-2 mb-16">
 
-        <!-- PRODUTO - ITEM -->
-        <img src="./assets/img/hamb-1.png" alt="Hamburguer Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
-        <!-- FIM - PRODUTO - ITEM -->
+        <!-- PRODUTO 1 - ITEM -->
+        <div class="flex gap-2 mt-4">
 
-        <div class="">
+          <img src="./assets/img/hamb-1.png" alt="Hamburguer Smash" class="img-menu">
+
+
+          <div class="">
           <p class="font-bold">Hamburguer Smash</p>
           <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prata e maionese da casa.</p>
 
-          <div>
-            <p>R$ 18,90</p>
-            <button class="bg-gray-900 px-5 rounded">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 18,90</p>
+            <button class="btn-add-carrinho" id="add-ao-carrinho" data-name="Hamburguer Smash" data-price="18.90">
+              <i class="fa fa-cart-plus text-xl text-white"></i>
             </button>
           </div>
+          </div>
+
         </div>
+        <!-- FIM - PRODUTO 1 - ITEM -->
+
+
+
+        <!-- PRODUTO 2 - ITEM -->
+        <div class="flex gap-2">
+
+          <img src="./assets/img/hamb-2.png" alt="Hamburguer Smash" class="img-menu">
+
+
+          <div class="">
+          <p class="font-bold">Hamburguer Duplo</p>
+          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prata e maionese da casa.</p>
+
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 32,90</p>
+            <button class="btn-add-carrinho" id="add-ao-carrinho" data-name="Hamburguer Duplo" data-price="32.90">
+              <i class="fa fa-cart-plus text-xl text-white"></i>
+            </button>
+          </div>
+          </div>
+
+        </div>
+        <!-- FIM - PRODUTO 2 - ITEM -->
+
+
+
+        <!-- PRODUTO 3 - ITEM -->
+        <div class="flex gap-2">
+
+          <img src="./assets/img/hamb-3.png" alt="Hamburguer Smash" class="img-menu">
+
+
+          <div class="">
+          <p class="font-bold">Hamburguer Cheddar</p>
+          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prata e maionese da casa.</p>
+
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 36,90</p>
+            <button class="btn-add-carrinho" id="add-ao-carrinho" data-name="Hamburguer Cheddar" data-price="36.90">
+              <i class="fa fa-cart-plus text-xl text-white"></i>
+            </button>
+          </div>
+          </div>
+
+        </div>
+        <!-- FIM - PRODUTO 3 - ITEM -->
+
+
+
+
+        <!-- PRODUTO 4 - ITEM -->
+        <div class="flex gap-2">
+
+          <img src="./assets/img/hamb-4.png" alt="Hamburguer Smash" class="img-menu">
+
+
+          <div class="">
+          <p class="font-bold">Hamburguer Chicken</p>
+          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prata e maionese da casa.</p>
+
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 29,90</p>
+            <button class="btn-add-carrinho" id="add-ao-carrinho" data-name="Hamburguer Chicken" data-price="29.90">
+              <i class="fa fa-cart-plus text-xl text-white"></i>
+            </button>
+          </div>
+          </div>
+
+        </div>
+        <!-- FIM - PRODUTO 4 - ITEM -->
+
 
       </main>
+
+
+      <!-- BEBIDAS -->
+      <div class="mx-auto max-w-7xl px-2">
+        <h2 class="h2-menu">Bebidas</h2>
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-24 md:gap-y-10 gap-y-8 mx-auto max-w-7xl px-2 mb-32" id="menu">
+
+        <!-- PRODUTO 1 - ITEM -->
+        <div class="flex gap-2 w-full mt-4">
+
+          <img src="./assets/img/refri-1.png" alt="Coca-Cola 350ml" class="img-menu">
+
+
+          <div class="w-full">
+          <p class="font-bold">Coca-Cola 350ml</p>
+          <p class="text-sm">Ideal para uma perfeita combinação com nossos deliciosos hamburguer's.</p>
+
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 5,90</p>
+            <button class="btn-add-carrinho" id="add-ao-carrinho" data-name="Coca-Cola 350ml" data-price="5.90">
+              <i class="fa fa-cart-plus text-xl text-white"></i>
+            </button>
+          </div>
+          </div>
+
+        </div>
+        <!-- FIM - PRODUTO 1 - ITEM -->
+
+
+        <!-- PRODUTO 2 - ITEM -->
+        <div class="flex gap-2 w-full">
+
+          <img src="./assets/img/refri-2.png" alt="Guaraná 350ml" class="img-menu">
+
+
+          <div class="w-full">
+          <p class="font-bold">Guaraná 350ml</p>
+          <p class="text-sm">Ideal para uma perfeita combinação com nossos deliciosos hamburguer's.</p>
+
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 5,90</p>
+            <button class="btn-add-carrinho" id="add-ao-carrinho" data-name="Guaraná 350ml" data-price="5.90">
+              <i class="fa fa-cart-plus text-xl text-white"></i>
+            </button>
+          </div>
+          </div>
+
+        </div>
+        <!-- FIM - PRODUTO 2 - ITEM -->
+
+
+
+      </div>
+      <!-- FIM - BEBIDAS -->
+
+
     </div>
   <!-- FIM - MENU -->
 
+
+
+  <!-- FOOTER -->
+    <footer class="w-full bg-red-500 text-white font-bold py-4 text-center fixed bottom-0 z-40">
+      <button id="carrinho-btn">
+        (<span id="contador-item" class="mx-2">0</span>)
+        Ver carrinho <i class="fa fa-cart-plus text-xl text-white"></i>
+      </button>
+    </footer>
+  <!-- FIM - FOTER -->
+
+
+
+  <!-- MODAL -->
+  <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="carrinho-modal">
+
+    <div class="bg-white shadow-lg p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+      <h2 class="text-center font-bold text-2xl mb-4">Meu Carrinho</h2>
+
+      <div class="flex justify-between mb-2 flex-col" id="itens-carrinho">
+        <p class="font-bold"> Total: <span id="carrinho-total">0,00</span></p>
+        <p class="font-bold mt-4"> Endereço de entrega: </p>
+        <input type="text" placeholder="Digite seu endereço completo .." id="endereco" class="w-full border-2 rounded my-1 p-2">
+        <p class="text-red-500 hidden" id="atencao-endereco">Digite seu endereço completo!</p>
+      </div>
+
+      <div class="text-white flex justify-between items-center mt-8 w-full">
+        <button id="fechar-modal-btn" class="bg-red-500 px-4 py-2 rounded hover:bg-red-600 duration-300">Fechar</button>
+        <button id="finalizar-btn" class="bg-green-500 px-4 py-2 rounded hover:bg-green-600 duration-300">Finalizar Pedido</button>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- FIM - MODAL -->
+
+
+
+  <!-- SCRIPTS -->
+  <script src="./assets/js/scripts.js"></script>
+  <!-- FIM - SCRIPTS -->
 
 </body>
 </html>

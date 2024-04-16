@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .img-menu{
+        @apply w-28 h-28 rounded-md mb-1 hover:scale-110 hover:rotate-2 duration-300;
+    }
+
+    .h2-menu{
+        @apply text-lg md:text-2xl font-bold mt-10 mb-2 md:mt-14;
+    }
+
+    .btn-add-carrinho {
+        @apply bg-gray-900 px-3 pt-2 pb-1 rounded hover:bg-red-500 duration-300;
+      }
+}

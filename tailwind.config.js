@@ -8,7 +8,9 @@ module.exports = {
     extend: {
       backgroundImage:{
         "home": "url('/assets/img/bg.png')",
-        "home-moldura": "url('/assets/img/moldura-header.png')",
+        "home-moldura": "url('/assets/img/moldura-header.webp')",
+        "star-hamburguer": "url('/assets/img/star.webp')",
+        "iluminacao": "url('/assets/img/iluminacao.webp')",
       }
     },
   },

@@ -73,7 +73,7 @@ function addCarrinho(nome, preco){
 
 //ATUALIZA O CARRINHO
 function carrinhoAtualizado(){
-    itemCarrinho.innerHTML = "";
+    itemCarrinho.innerHTML = ``;
     let total = 0;
 
     carrinho.forEach(item => {
